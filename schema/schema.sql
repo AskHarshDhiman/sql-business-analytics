@@ -1,3 +1,7 @@
+-- Core E-Commerce Database Schema
+-- Defines relational entities: Customers, Orders, and Order Items
+
+-- Enforce primary customer dimensions
 CREATE TABLE customers (
     customer_id INT PRIMARY KEY,
     customer_name VARCHAR(100) NOT NULL,
@@ -5,6 +9,7 @@ CREATE TABLE customers (
     region VARCHAR(50) NOT NULL
 );
 
+-- Transactional order headers linked to customers
 CREATE TABLE orders (
     order_id INT PRIMARY KEY,
     customer_id INT REFERENCES customers(customer_id),

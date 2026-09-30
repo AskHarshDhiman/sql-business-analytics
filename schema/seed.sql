@@ -1,3 +1,6 @@
+-- Synthetic Transactional Seed Dataset (Q1 2026)
+-- Generates baseline metrics for revenue, retention, and cohort tracking.
+
 INSERT INTO customers (customer_id, customer_name, signup_date, region) VALUES
 (1, 'Aarav Sharma', '2026-01-05', 'North'),
 (2, 'Priya Patel', '2026-01-12', 'West'),
